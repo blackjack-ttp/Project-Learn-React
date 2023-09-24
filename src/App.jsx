@@ -1,9 +1,12 @@
 import './App.css';
+import Slide from '@/components/Slider';
 
 function App() {
   return (
     <>
-      <h1>WELCOME TO PROJECT LEARN REACT</h1>
+      <div className="App">
+        <Slide />
+      </div>
     </>
   );
 }
