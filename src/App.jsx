@@ -1,11 +1,13 @@
 import './App.scss';
-import Slide from '@/components/Slider';
+import Exercise1 from '@/components/Exercise1';
+// import Slide from '@/components/Slider';
 
 function App() {
   return (
     <>
       <div className="App">
-        <Slide />
+        {/* <Slide /> */}
+        <Exercise1 />
       </div>
     </>
   );
