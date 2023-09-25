@@ -1,4 +1,6 @@
 import { defineConfig } from 'vite';
+import { resolve } from 'path';
+import { fileURLToPath } from 'url';
 import react from '@vitejs/plugin-react';
 import viteCompression from 'vite-plugin-compression';
 
@@ -20,7 +22,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@': '/src',
+      '@': resolve(fileURLToPath(new URL('./src/', import.meta.url))),
     },
   },
 });
