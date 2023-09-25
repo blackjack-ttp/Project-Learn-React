@@ -1,5 +1,5 @@
 .slider {
-    width: 100%;
+    width: 80vw;
     height: 100%;
     margin: 50px auto 0;
     display: flex;
@@ -9,34 +9,51 @@
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
-    &__leftArrow {
-        position: absolute;
-        top: 50%;
-        left: 32px;
-        font-size: 3rem;
-        color: #ecea59;
-        z-index: 10;
-        cursor: pointer;
-        user-select: none;
-    }
-
+    &__leftArrow,
     &__rightArrow {
         position: absolute;
         top: 50%;
-        right: 32px;
-        font-size: 3rem;
-        color: #ecea59;
+        font-size: 4rem;
+        color: var(--yellow-theme-main-color);
         z-index: 10;
         cursor: pointer;
         user-select: none;
     }
 
+    &__leftArrow {
+        left: 32px;
+    }
+
+    &__rightArrow {
+        right: 32px;
+    }
+
     &__item,
-    &__item__active {
+    &__item--active {
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         &__image {
             width: 100%;
             height: 100%;
             border-radius: 10px;
+        }
+
+        &__itemContent {
+            position: absolute;
+            top: 50%;
+            h3 {
+                color: var(--yellow-theme-main-color);
+                font-weight: 700;
+                font-size: 2.6rem;
+            }
+            p {
+                color: var(--yellow-theme-sub-text-color);
+                font-weight: 700;
+                font-size: 1.6rem;
+            }
         }
     }
 
@@ -45,9 +62,30 @@
         transition-duration: 1s ease;
     }
 
-    &__item__active {
+    &__item--active {
         opacity: 1;
-        transition-duration: 1s;
+        transition-duration: 1s ease;
         transform: scale(1.08);
+    }
+
+    &__container-dots {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        &__dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 3px solid #f1f1f1;
+            margin: 0 5px;
+            background: #f1f1f1;
+            z-index: 9999;
+        }
+        &__dot--active {
+            background: rgb(32, 32, 32);
+        }
     }
 }

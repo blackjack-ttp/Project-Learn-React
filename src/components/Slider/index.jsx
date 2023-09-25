@@ -23,7 +23,7 @@ const Slider = () => {
   useEffect(() => {
     const slider = setInterval(() => {
       setCurrent(current === length - 1 ? 0 : current + 1);
-    }, 1000);
+    }, 2000);
     return () => {
       clearInterval(slider);
     };
@@ -31,30 +31,43 @@ const Slider = () => {
   return (
     <>
       <section className="slider">
-        <FaArrowAltCircleLeft
-          className="slider__leftArrow"
-          onClick={prevSlide}
-          direction={'prev'}
-        />
-        <FaArrowAltCircleRight
-          className="slider__rightArrow"
-          onClick={nextSlide}
-          direction={'next'}
-        />
+        <FaArrowAltCircleLeft className="slider__leftArrow" onClick={prevSlide} />
+        <FaArrowAltCircleRight className="slider__rightArrow" onClick={nextSlide} />
         {ImageSliderData.map((item, index) => {
           return (
             <div
               key={index}
-              className={index === current ? 'slider__item slider__item__active' : 'slider__item'}
+              className={index === current ? 'slider__item slider__item--active' : 'slider__item'}
             >
-              <img src={item.image} key={index} alt={item.title} className="slider__item__image" />
-              <div className="slider__item__itemContent">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
+              {index === current && (
+                <>
+                  <img
+                    src={item.image}
+                    key={index}
+                    alt={item.title}
+                    className="slider__item__image"
+                  />
+                  <div className="slider__item__itemContent">
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </>
+              )}
             </div>
           );
         })}
+        <div className="slider__container-dots">
+          {Array.from({ length: 5 }).map((item, index) => (
+            <div
+              onClick={() => moveDot(index)}
+              className={
+                current === index
+                  ? 'slider__container-dots__dot slider__container-dots__dot--active'
+                  : 'slider__container-dots__dot'
+              }
+            ></div>
+          ))}
+        </div>
       </section>
     </>
   );

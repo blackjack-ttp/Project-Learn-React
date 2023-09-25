@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Slide from '@/components/Slider';
 
 function App() {
