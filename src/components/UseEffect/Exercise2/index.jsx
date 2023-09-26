@@ -1,8 +1,21 @@
 /* eslint-disable no-unused-vars */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.scss';
 
 const Exercise2 = () => {
+  const [scroll, setScroll] = useState(0);
+  const HandleScroll = () => {
+    const winScroll = document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    setScroll(scrolled);
+  };
+  useEffect(() => {
+    window.addEventListener('scroll', HandleScroll);
+    return () => {
+      window.removeEventListener('scroll', HandleScroll);
+    };
+  }, []);
   return (
     <>
       <section className="container">
@@ -11,6 +24,13 @@ const Exercise2 = () => {
           <div className="container__warpper__title">
             <h1>Câu chuyện 3 lưỡi rìu</h1>
           </div>
+          <div className="container__warpper__main-scroll">
+            <div
+              className="container__warpper__main-scroll__style"
+              style={{ width: `${scroll}%` }}
+            ></div>
+          </div>
+
           <div className="container__warpper__content">
             <p>
               Câu chuyện ba lưỡi rìu là câu chuyện cổ tích thế tục Việt Nam vô cùng ý nghĩa kể về
@@ -90,8 +110,7 @@ const Exercise2 = () => {
             </p>
             <p>
               Anh chàng tiều phu vui vẻ đỡ lấy hai lưỡi rìu mà ông cụ tặng và cảm tạ. Ông cụ hóa
-              phép và biến mất. Lúc đó anh chàng tiều phu mới biết rằng mình vừa được bụt giúp
-              đỡ.Truyện cổ tích: Câu chuyện amp;#34;Ba lưỡi rìuamp;#34; - 4
+              phép và biến mất. Lúc đó anh chàng tiều phu mới biết rằng mình vừa được bụt giúp đỡ.
             </p>
           </div>
         </div>

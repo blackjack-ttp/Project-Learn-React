@@ -21,6 +21,22 @@
         flex-direction: column;
         margin-top: 20px;
 
+        &__main-scroll {
+            background-color: #000000;
+            height: 15px;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            left: 0;
+            z-index: 1;
+
+            &__style {
+                height: 15px;
+                background-color: var(--yellow-theme-main-color);
+                width: 15%;
+            }
+        }
+
         &__title {
             h1 {
                 font-size: 6rem;
