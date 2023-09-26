@@ -1,6 +1,6 @@
 import './App.scss';
-import Exercise1 from '@/components/Exercise1';
-// import Slide from '@/components/Slider';
+import Exercise1 from '@/components/UseEffect/Exercise1';
+// import Slide from '@/components/UseEffect/Exercise0';
 
 function App() {
   return (
