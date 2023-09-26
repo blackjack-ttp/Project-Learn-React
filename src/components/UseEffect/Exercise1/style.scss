@@ -32,6 +32,16 @@
             margin: 4px 2px;
             cursor: pointer;
         }
+
+        button:hover {
+            background-color: var(--yellow-theme-main-color);
+            color: var(--yellow-theme-background-color);
+        }
+
+        button:focus {
+            background-color: var(--yellow-theme-main-color);
+            color: var(--yellow-theme-background-color);
+        }
     }
 
     &__loader {

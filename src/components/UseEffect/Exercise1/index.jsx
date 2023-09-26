@@ -21,7 +21,7 @@ const Exercise1 = () => {
       });
   };
   useEffect(() => {
-    handleFetchData('users');
+    handleFetchData();
   }, []);
   return (
     <>
@@ -35,7 +35,7 @@ const Exercise1 = () => {
         </div>
         {loading ? (
           <div className="container__loader">
-            <p>...Loading...</p>
+            <p>...LOADING...</p>
           </div>
         ) : (
           <div className="container__data">
