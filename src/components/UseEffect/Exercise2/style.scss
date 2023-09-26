@@ -6,9 +6,43 @@
     position: relative;
     flex-direction: column;
 
-    h1 {
+    &__header {
         font-size: 6rem;
         font-weight: 700;
         color: var(--yellow-theme-main-color);
+    }
+
+    &__warpper {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-direction: column;
+        margin-top: 20px;
+
+        &__title {
+            h1 {
+                font-size: 6rem;
+                font-weight: 700;
+                color: var(--yellow-theme-main-color);
+            }
+        }
+
+        &__content {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            flex-direction: column;
+            margin-top: 20px;
+
+            p {
+                line-height: 40px;
+                font-size: 2rem;
+                font-weight: 400;
+                color: var(--yellow-theme-sub-text-color);
+                margin-top: 10px;
+            }
+        }
     }
 }
