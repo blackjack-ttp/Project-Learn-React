@@ -1,0 +1,110 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+    &__title {
+        font-size: 6rem;
+        font-weight: 700;
+        color: var(--yellow-theme-main-color);
+    }
+
+    &__search {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: 1px solid var(--yellow-theme-main-color);
+        padding: 15px;
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--yellow-theme-main-color);
+            margin-top: 13px;
+            margin-right: 25px;
+        }
+
+        input {
+            width: 350px;
+            height: 30px;
+            padding: 15px;
+            margin: 10px 0px;
+            border-radius: 5px;
+            border: 1px solid var(--yellow-theme-main-color);
+        }
+
+        button {
+            padding: 10px;
+            border: 1px solid var(--yellow-theme-main-color);
+            background-color: var(--yellow-theme-background-color);
+            color: var(--yellow-theme-main-color);
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+
+        button:hover {
+            background-color: var(--yellow-theme-main-color);
+            color: var(--yellow-theme-background-color);
+        }
+    }
+
+    &__loader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 200px;
+
+        p {
+            font-size: 6rem;
+            font-weight: 700;
+            color: var(--yellow-theme-main-color);
+        }
+    }
+
+    &__data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+
+        &__item {
+            text-align: left;
+
+            &__content {
+                line-height: 40px;
+                margin-right: 1.5rem;
+                font-size: 2rem;
+                color: var(--yellow-theme-main-color);
+                text-decoration: none;
+                padding: 0.5rem;
+            }
+        }
+    }
+
+    &__error {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 200px;
+
+        p {
+            font-size: 6rem;
+            font-weight: 700;
+            color: var(--yellow-theme-main-color);
+        }
+    }
+}
