@@ -1,9 +1,10 @@
 import './App.scss';
-// UseState
+// --------------------- UseState ---------------------
 // import Count from '@/components/UseState/Exercise0';
 // import FlagImage from '@/components/UseState/Exercise1';
-import ChangeStyleColor from '@/components/UseState/Exercise2';
-// UseEffects
+// import ChangeStyleColor from '@/components/UseState/Exercise2';
+import FormRegister from '@/components/UseState/Exercise3';
+// --------------------- UseEffects ---------------------
 // import Slide from '@/components/UseEffect/Exercise0';
 // import Exercise1 from '@/components/UseEffect/Exercise1';
 // import Exercise2 from '@/components/UseEffect/Exercise2';
@@ -15,7 +16,8 @@ function App() {
         {/* ----------- UseState ----------- */}
         {/* <Count /> */}
         {/* <FlagImage /> */}
-        <ChangeStyleColor />
+        {/* <ChangeStyleColor /> */}
+        <FormRegister />
 
         {/* ----------- UseEffect ----------- */}
         {/* <Slide /> */}
