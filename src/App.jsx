@@ -1,6 +1,7 @@
 import './App.scss';
 // UseState
-import Count from '@/components/UseState/Exercise0';
+// import Count from '@/components/UseState/Exercise0';
+import FlagImage from '@/components/UseState/Exercise1';
 // UseEffects
 // import Slide from '@/components/UseEffect/Exercise0';
 // import Exercise1 from '@/components/UseEffect/Exercise1';
@@ -11,7 +12,8 @@ function App() {
     <>
       <div className="App">
         {/* ----------- UseState ----------- */}
-        <Count />
+        {/* <Count /> */}
+        <FlagImage />
 
         {/* ----------- UseEffect ----------- */}
         {/* <Slide /> */}
