@@ -1,7 +1,8 @@
 import './App.scss';
 // UseState
 // import Count from '@/components/UseState/Exercise0';
-import FlagImage from '@/components/UseState/Exercise1';
+// import FlagImage from '@/components/UseState/Exercise1';
+import ChangeStyleColor from '@/components/UseState/Exercise2';
 // UseEffects
 // import Slide from '@/components/UseEffect/Exercise0';
 // import Exercise1 from '@/components/UseEffect/Exercise1';
@@ -13,7 +14,8 @@ function App() {
       <div className="App">
         {/* ----------- UseState ----------- */}
         {/* <Count /> */}
-        <FlagImage />
+        {/* <FlagImage /> */}
+        <ChangeStyleColor />
 
         {/* ----------- UseEffect ----------- */}
         {/* <Slide /> */}
