@@ -1,12 +1,13 @@
 import './App.scss';
 // --------------------- Projects ---------------------
-import Project1 from '@/components/Projects/Project1';
+// import Project1 from '@/components/Projects/Project1';
 
 // --------------------- UseState ---------------------
 // import Count from '@/components/UseState/Exercise0';
 // import FlagImage from '@/components/UseState/Exercise1';
 // import ChangeStyleColor from '@/components/UseState/Exercise2';
 // import FormRegister from '@/components/UseState/Exercise3';
+import Category from '@/components/UseState/Exercise4';
 // --------------------- UseEffects ---------------------
 // import Slide from '@/components/UseEffect/Exercise0';
 // import Exercise1 from '@/components/UseEffect/Exercise1';
@@ -17,12 +18,13 @@ function App() {
     <>
       <div className="App">
         {/* ----------- Project ----------- */}
-        <Project1 />
+        {/* <Project1 /> */}
         {/* ----------- UseState ----------- */}
         {/* <Count /> */}
         {/* <FlagImage /> */}
         {/* <ChangeStyleColor /> */}
         {/* <FormRegister /> */}
+        <Category />
 
         {/* ----------- UseEffect ----------- */}
         {/* <Slide /> */}

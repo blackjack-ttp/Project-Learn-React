@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
-const Catogories = ({ categories, activeCategory, onFiterItem }) => {
+const Catogories = ({ categories, activeCategory, onFilterItems }) => {
   return (
     <>
       <div className="btn-container">
@@ -11,7 +11,7 @@ const Catogories = ({ categories, activeCategory, onFiterItem }) => {
               type="button"
               key={index}
               className={`${activeCategory === category ? 'filter-btn active' : 'filter-btn'}`}
-              onClick={() => onFiterItem(category)}
+              onClick={() => onFilterItems(category)}
             >
               {category}
             </button>

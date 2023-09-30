@@ -6,7 +6,7 @@ import items from './data';
 import logo from '@/assets/BLACKJACK-TTP.png';
 import Menu from './menu';
 
-const allCategories = ['all', ...new Set(items.map((item) => item.categor))];
+const allCategories = ['all', ...new Set(items.map((item) => item.category))];
 
 const Category = () => {
   const [menuItem, setMenuItem] = useState(items);
