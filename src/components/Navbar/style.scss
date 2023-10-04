@@ -1,0 +1,80 @@
+.navbar-wrapper {
+    background-color: var(--yellow-theme-nav-background-color);
+    width: 100%;
+    height: 10vh;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 1px solid var(--yellow-theme-main-color);
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 50px;
+
+        &__item {
+            padding: 25px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            &__link {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--yellow-theme-main-color);
+                text-decoration: none;
+                padding: 0.5rem;
+            }
+
+            &__link:hover {
+                border-bottom: 2px solid var(--yellow-theme-sub-text-color);
+            }
+
+            .dropdown-chirder {
+                min-width: 130px;
+                padding: 15px 10px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                position: absolute;
+                top: 40px;
+                border-radius: 8px;
+                background-color: var(--yellow-theme-nav-background-color);
+                box-shadow: rgba(77, 73, 73, 0.4) 0px 25px 50px -12px;
+                opacity: 0;
+                visibility: hidden;
+                transition: 0.2s ease-in-out;
+                list-style: none;
+
+                &__item {
+                    padding: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    &__link {
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                        color: var(--yellow-theme-sub-text-color);
+                        text-decoration: none;
+                        padding: 0.5rem;
+                    }
+                    &__link:hover {
+                        color: var(--yellow-theme-main-color);
+                    }
+                }
+            }
+        }
+
+        &__item:hover .dropdown-chirder {
+            opacity: 1;
+            visibility: visible;
+            top: 60px;
+        }
+    }
+}

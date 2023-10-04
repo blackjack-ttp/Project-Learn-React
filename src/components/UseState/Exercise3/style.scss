@@ -4,10 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: initial;
     flex-direction: column;
-    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
-        url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    // background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3)),
+    //     url("https://images.pexels.com/photos/114979/pexels-photo-114979.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-color: var(--yellow-theme-background-color);
     background-size: cover;
     background-position: center;
 

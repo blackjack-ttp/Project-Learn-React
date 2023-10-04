@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    position: initial;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 
@@ -30,7 +30,7 @@
 
     &__item,
     &__item--active {
-        position: absolute;
+        position: initial;
         justify-content: center;
         align-items: center;
         display: flex;
