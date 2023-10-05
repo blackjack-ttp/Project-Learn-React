@@ -33,7 +33,7 @@
                 border-bottom: 2px solid var(--yellow-theme-sub-text-color);
             }
 
-            .dropdown-chirder {
+            .dropdown-children {
                 min-width: 130px;
                 padding: 15px 10px;
                 box-sizing: border-box;
@@ -71,7 +71,7 @@
             }
         }
 
-        &__item:hover .dropdown-chirder {
+        &__item:hover .dropdown-children {
             opacity: 1;
             visibility: visible;
             top: 60px;

@@ -3,15 +3,15 @@ import Navbar from '@/components/Navbar';
 import React from 'react';
 import './style.scss';
 
-const Home = () => {
+const UseStateLayout = () => {
   return (
     <>
       {/* <Navbar /> */}
-      <div className="wrapper-homePage">
-        <h1 className="wrapper-homePage__title">Home Page</h1>
+      <div className="wrapper-useStatePage">
+        <h1 className="wrapper-useStatePage__title">UseState Page</h1>
       </div>
     </>
   );
 };
 
-export default Home;
+export default UseStateLayout;

@@ -3,15 +3,15 @@ import Navbar from '@/components/Navbar';
 import React from 'react';
 import './style.scss';
 
-const Home = () => {
+const UseEffectLayout = () => {
   return (
     <>
       {/* <Navbar /> */}
-      <div className="wrapper-homePage">
-        <h1 className="wrapper-homePage__title">Home Page</h1>
+      <div className="wrapper-useEffectPage">
+        <h1 className="wrapper-useEffectPage__title">UseEffect Page</h1>
       </div>
     </>
   );
 };
 
-export default Home;
+export default UseEffectLayout;

@@ -5,18 +5,18 @@ const data = [
   },
   {
     lable: 'PROJECTS',
-    to: '/projects',
-    chirder: [
+    to: 'projects',
+    children: [
       {
-        lable: 'PROJECT 1',
+        lable: 'PROJECT1',
         to: '/projects/project1',
-      }
-    ]
+      },
+    ],
   },
   {
     lable: 'USESTATES',
-    to: '/usestates',
-    chirder: [
+    to: 'usestates',
+    children: [
       {
         lable: 'EXERCISE 0',
         to: '/usestates/exercise0',
@@ -41,13 +41,12 @@ const data = [
         lable: 'EXERCISE 5',
         to: '/usestates/exercise5',
       },
-
-    ]
+    ],
   },
   {
     lable: 'USEEFFECTS',
-    to: '/useeffects',
-    chirder: [
+    to: 'useeffects',
+    children: [
       {
         lable: 'EXERCISE 0',
         to: '/useeffects/exercise0',
@@ -60,7 +59,7 @@ const data = [
         lable: 'EXERCISE 2',
         to: '/useeffects/exercise2',
       },
-    ]
+    ],
   },
 ];
 export default data;
