@@ -1,33 +1,23 @@
 //* LIB
 import { useRoutes } from 'react-router-dom';
 
-//* PAGES
-import Home from '@/pages/home/Home';
-import ProjectLayout from '@/pages/projectPage/ProjectLayout';
-import UseStateLayout from '@/pages/useStatePage/UseStateLayout';
-import UseEffectLayout from '@/pages/UseEffectPage/UseEffectLayout';
-import NotFound from '@/pages/notFound';
-
-//* COMPONENTS
-import Navbar from '@/components/Navbar';
-
-// --------------------- Projects ---------------------
-import Project1 from '@/components/Projects/Project1';
-
-// --------------------- UseState ---------------------
-import Count from '@/components/UseState/Exercise0';
-import FlagImage from '@/components/UseState/Exercise1';
-import ChangeStyleColor from '@/components/UseState/Exercise2';
-import FormRegister from '@/components/UseState/Exercise3';
-import Category from '@/components/UseState/Exercise4';
-
-// --------------------- UseEffects ---------------------
-import Slide from '@/components/UseEffect/Exercise0';
-import Exercise1 from '@/components/UseEffect/Exercise1';
-import Exercise2 from '@/components/UseEffect/Exercise2';
-
 //* ROUTER
 import OutletRouter from './OutletRouter';
+
+//* IMPORT
+import {
+  NavbarComponent,
+  ProjectEx0Component,
+  UseEffectEx0Component,
+  UseEffectEx1Component,
+  UseEffectEx2Component,
+  UseStateEx0Component,
+  UseStateEx1Component,
+  UseStateEx2Component,
+  UseStateEx3Component,
+  UseStateEx4Component,
+} from '@/imports/components';
+import { HomePage, NotFoundPage, ProjectPage, UseEffectPage, UseStatePage } from '@/imports/pages';
 
 const Routers = () => {
   let routes = useRoutes([
@@ -35,24 +25,24 @@ const Routers = () => {
       path: '/',
       element: (
         <OutletRouter>
-          <Navbar />
+          <NavbarComponent />
         </OutletRouter>
       ),
       children: [
         {
-          element: <Home />,
+          element: <HomePage />,
           index: true,
         },
         {
           path: 'projects',
           children: [
             {
-              element: <ProjectLayout />,
+              element: <ProjectPage />,
               index: true,
             },
             {
               path: 'project1',
-              element: <Project1 />,
+              element: <ProjectEx0Component />,
             },
           ],
         },
@@ -61,27 +51,27 @@ const Routers = () => {
           children: [
             {
               index: true,
-              element: <UseStateLayout />,
+              element: <UseStatePage />,
             },
             {
               path: 'exercise0',
-              element: <Count />,
+              element: <UseStateEx0Component />,
             },
             {
               path: 'exercise1',
-              element: <FlagImage />,
+              element: <UseStateEx1Component />,
             },
             {
               path: 'exercise2',
-              element: <ChangeStyleColor />,
+              element: <UseStateEx2Component />,
             },
             {
               path: 'exercise3',
-              element: <FormRegister />,
+              element: <UseStateEx3Component />,
             },
             {
               path: 'exercise4',
-              element: <Category />,
+              element: <UseStateEx4Component />,
             },
           ],
         },
@@ -90,19 +80,19 @@ const Routers = () => {
           children: [
             {
               index: true,
-              element: <UseEffectLayout />,
+              element: <UseEffectPage />,
             },
             {
               path: 'exercise0',
-              element: <Slide />,
+              element: <UseEffectEx0Component />,
             },
             {
               path: 'exercise1',
-              element: <Exercise1 />,
+              element: <UseEffectEx1Component />,
             },
             {
               path: 'exercise2',
-              element: <Exercise2 />,
+              element: <UseEffectEx2Component />,
             },
           ],
         },
@@ -110,7 +100,7 @@ const Routers = () => {
     },
     {
       path: '*',
-      element: <NotFound />,
+      element: <NotFoundPage />,
     },
   ]);
   return routes;
