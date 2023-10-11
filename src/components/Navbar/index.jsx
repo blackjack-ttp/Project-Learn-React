@@ -1,7 +1,8 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
+//* LIB
+import { Link } from 'react-router-dom';
+//* DATA
 import data from './data';
-import { Link, Outlet } from 'react-router-dom';
+//* SCSS
 import './style.scss';
 
 const Navbar = () => {
