@@ -37,10 +37,6 @@ const data = [
         lable: 'EXERCISE 4',
         to: '/usestates/exercise4',
       },
-      {
-        lable: 'EXERCISE 5',
-        to: '/usestates/exercise5',
-      },
     ],
   },
   {

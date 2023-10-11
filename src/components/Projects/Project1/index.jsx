@@ -1,6 +1,8 @@
-/* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+//* LIB
+import { useEffect, useState } from 'react';
 import axios from 'axios';
+
+//* SCSS
 import './style.scss';
 
 const Project1 = () => {

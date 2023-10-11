@@ -1,5 +1,6 @@
-/* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+//* LIB
+import { useEffect, useState } from 'react';
+//* SCSS
 import './style.scss';
 
 const Exercise2 = () => {

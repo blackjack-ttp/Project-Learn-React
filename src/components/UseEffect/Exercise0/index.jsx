@@ -1,7 +1,9 @@
-/* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
-import './style.scss';
+//* LIB
+import { useEffect, useState } from 'react';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+//* SCSS
+import './style.scss';
+//* DATA
 import ImageSliderData from './data';
 
 const Slider = () => {

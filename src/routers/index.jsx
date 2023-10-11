@@ -1,14 +1,16 @@
-/* eslint-disable no-unused-vars */
-import React from 'react';
+//* LIB
 import { useRoutes } from 'react-router-dom';
 
-import Navbar from '@/components/Navbar';
-
-// --------------------- Pages ---------------------
+//* PAGES
 import Home from '@/pages/home/Home';
 import ProjectLayout from '@/pages/projectPage/ProjectLayout';
 import UseStateLayout from '@/pages/useStatePage/UseStateLayout';
 import UseEffectLayout from '@/pages/UseEffectPage/UseEffectLayout';
+import NotFound from '@/pages/notFound';
+
+//* COMPONENTS
+import Navbar from '@/components/Navbar';
+
 // --------------------- Projects ---------------------
 import Project1 from '@/components/Projects/Project1';
 
@@ -18,19 +20,26 @@ import FlagImage from '@/components/UseState/Exercise1';
 import ChangeStyleColor from '@/components/UseState/Exercise2';
 import FormRegister from '@/components/UseState/Exercise3';
 import Category from '@/components/UseState/Exercise4';
+
 // --------------------- UseEffects ---------------------
 import Slide from '@/components/UseEffect/Exercise0';
 import Exercise1 from '@/components/UseEffect/Exercise1';
 import Exercise2 from '@/components/UseEffect/Exercise2';
-import NotFound from '@/pages/notFound';
+
+//* ROUTER
+import OutletRouter from './OutletRouter';
 
 const Routers = () => {
   let routes = useRoutes([
     {
-      element: <Navbar />,
+      path: '/',
+      element: (
+        <OutletRouter>
+          <Navbar />
+        </OutletRouter>
+      ),
       children: [
         {
-          path: '/',
           element: <Home />,
           index: true,
         },
@@ -97,11 +106,11 @@ const Routers = () => {
             },
           ],
         },
-        {
-          path: '*',
-          element: <NotFound />,
-        },
       ],
+    },
+    {
+      path: '*',
+      element: <NotFound />,
     },
   ]);
   return routes;

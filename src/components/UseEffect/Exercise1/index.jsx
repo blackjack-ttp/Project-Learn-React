@@ -1,6 +1,7 @@
-/* eslint-disable no-unused-vars */
+//* LIB
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+//* SCSS
 import './style.scss';
 
 const Exercise1 = () => {

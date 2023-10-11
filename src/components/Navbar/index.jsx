@@ -29,7 +29,6 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-      <Outlet />
     </>
   );
 };
