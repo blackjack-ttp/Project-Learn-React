@@ -8,6 +8,7 @@ import OutletRouter from './OutletRouter';
 import {
   NavbarComponent,
   ProjectEx0Component,
+  UseContextComponent,
   UseEffectEx0Component,
   UseEffectEx1Component,
   UseEffectEx2Component,
@@ -95,6 +96,10 @@ const Routers = () => {
               element: <UseEffectEx2Component />,
             },
           ],
+        },
+        {
+          path: 'usecontext/*',
+          element: <UseContextComponent />,
         },
       ],
     },

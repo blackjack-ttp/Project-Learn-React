@@ -1,0 +1,37 @@
+.nav-context-wrapper {
+    background-color: var(--yellow-theme-nav-background-color);
+    width: 90%;
+    height: 10vh;
+    padding: 0 40px;
+    box-sizing: border-box;
+    border: 1px solid var(--yellow-theme-main-color);
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        gap: 50px;
+
+                &__item {
+            padding: 25px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+            &__link {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--yellow-theme-main-color);
+                text-decoration: none;
+                padding: 0.5rem;
+            }
+
+            &__link:hover {
+                border-bottom: 2px solid var(--yellow-theme-sub-text-color);
+            }
+        }
+    }
+}

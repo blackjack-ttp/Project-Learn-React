@@ -1,14 +1,15 @@
-export const data = [
+const data = [
   {
     to: '/usecontext',
     lable: 'HOME',
   },
   {
-    to: '/about',
+    to: '/usecontext/about',
     lable: 'ABOUT',
   },
   {
-    to: '/contact',
+    to: '/usecontext/contact',
     lable: 'CONTACT',
   },
 ];
+export default data;

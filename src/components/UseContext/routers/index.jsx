@@ -12,9 +12,9 @@ import {
 } from '../imports/page';
 
 const RouterContext = () => {
-  const element = useRoutes([
+  let element = useRoutes([
     {
-      path: '/usecontext',
+      path: '/',
       element: (
         <OutletRouterContext>
           <NavbarComponentContext />

@@ -17,3 +17,6 @@ export { default as UseStateEx4Component } from '@/components/UseState/Exercise4
 export { default as UseEffectEx0Component } from '@/components/UseEffect/Exercise0';
 export { default as UseEffectEx1Component } from '@/components/UseEffect/Exercise1';
 export { default as UseEffectEx2Component } from '@/components/UseEffect/Exercise2';
+
+//* USECONTEXT
+export { default as UseContextComponent } from '@/components/UseContext';

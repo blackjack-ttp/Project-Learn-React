@@ -10,11 +10,13 @@ import { LoadingComponentContext } from './imports/component';
 const UserContext = () => {
   return (
     <>
-      <Suspense fallback={<LoadingComponentContext />}>
-        <AuthProvider>
-          <RouterContext />
-        </AuthProvider>
-      </Suspense>
+      <AuthProvider>
+        <Suspense fallback={<LoadingComponentContext />}>
+          <div className="app-context-wrapper">
+            <RouterContext />
+          </div>
+        </Suspense>
+      </AuthProvider>
     </>
   );
 };
